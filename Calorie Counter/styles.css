@@ -42,6 +42,10 @@
   }
   
   button {
+<<<<<<< HEAD
+=======
+    outline: none;
+>>>>>>> 110332d308abaa354e64eecf5aae92970195d79f
     cursor: pointer;
     text-decoration: none;
     background-color: var(--light-yellow);
@@ -85,9 +89,17 @@
   }
   
   .surplus {
+<<<<<<< HEAD
     color: var(--light-pink);
   }
   
   .deficit {
     color: var(--light-green);
+=======
+    color: var(--light-green);
+  }
+  
+  .deficit {
+    color: var(--light-pink);
+>>>>>>> 110332d308abaa354e64eecf5aae92970195d79f
   }

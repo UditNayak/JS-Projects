@@ -13,6 +13,7 @@
         <form id="calorie-counter">
           <label for="budget">Budget</label>
           <input
+<<<<<<< HEAD
             id="budget"
             type="number"
             min="0"
@@ -20,6 +21,14 @@
             required
           />
 
+=======
+            type="number"
+            min="0"
+            id="budget"
+            placeholder="Daily calorie budget"
+            required
+          />
+>>>>>>> 110332d308abaa354e64eecf5aae92970195d79f
           <fieldset id="breakfast">
             <legend>Breakfast</legend>
             <div class="input-container"></div>
@@ -43,13 +52,18 @@
           <div class="controls">
             <span>
               <label for="entry-dropdown">Add food or exercise:</label>
+<<<<<<< HEAD
               <select name="options" id="entry-dropdown">
+=======
+              <select id="entry-dropdown" name="options">
+>>>>>>> 110332d308abaa354e64eecf5aae92970195d79f
                 <option value="breakfast" selected>Breakfast</option>
                 <option value="lunch">Lunch</option>
                 <option value="dinner">Dinner</option>
                 <option value="snacks">Snacks</option>
                 <option value="exercise">Exercise</option>
               </select>
+<<<<<<< HEAD
               <button id="add-entry" type="button">Add Entry</button>
             </span>
           </div>
@@ -64,3 +78,21 @@
     <script src="script.js"></script>
   </body>
 </html>
+=======
+              <button type="button" id="add-entry">Add Entry</button>
+            </span>
+          </div>
+          <div>
+            <button type="submit">
+              Calculate Remaining Calories
+            </button>
+            <button type="button" id="clear">Clear</button>
+          </div>
+        </form>
+        <div id="output" class="output hide"></div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+>>>>>>> 110332d308abaa354e64eecf5aae92970195d79f
