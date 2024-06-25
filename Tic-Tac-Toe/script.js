@@ -5,6 +5,7 @@ let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
 let turnO = true; // playerX, playerO
+var count = 0;
 
 // Winning combinations/possibilities/patterns
 const winningCombos = [
@@ -21,6 +22,7 @@ const winningCombos = [
 const resetGame = () => {
     turnO = true;
     enableBoxes();
+    count = 0;
 }
 
 boxes.forEach((box) => {
@@ -36,6 +38,12 @@ boxes.forEach((box) => {
     box.disabled = true; // disable the box after it's clicked
 
     checkWinner();
+    count++;
+    if(count === 9) {
+        msg.innerText = "It's a draw!";
+        msgContainer.classList.remove("hide");
+        disableBoxes();
+    }
   });
 });
 
